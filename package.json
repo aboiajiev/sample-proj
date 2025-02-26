@@ -1,0 +1,25 @@
+{
+  "name": "prod_postbank_task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"node main.js\" \"node services/audit/audit.js\"",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "json-rpc-2.0": "^1.7.0",
+    "knex": "^3.1.0",
+    "mssql": "^11.0.1",
+    "pg": "^8.13.3"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "prettier": "3.5.2"
+  }
+}
